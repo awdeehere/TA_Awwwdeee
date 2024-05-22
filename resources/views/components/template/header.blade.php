@@ -32,8 +32,14 @@
                 <div class="pointer" data-toggle="dropdown">
                     <div class="pull-left p-r-10 fs-14 font-heading d-lg-block d-none">
                         <span class="semi-bold" style="font-weight: 500 ;">
-                            Hallo, Audy Maulidi
+                            @if (auth()->check())
+                            Hallo, {{ auth()->user()->nama }}
+                            @endif
+                            @if (auth()->user()->foto)
+                            <img src="{{url('/'.auth()->user()->foto)}}" alt="User Image" style="width: 60px;height: 60px; padding: 10px; margin: 0px; " class="img-circle">
+                            @else
                             <img src="{{url('/')}}/images/profile.jpg" alt="User Avatar" style="width: 60px;height: 60px; padding: 10px; margin: 0px; " class="img-circle">
+                            @endif
                         </span>
                     </div>
                 </div>
@@ -42,7 +48,9 @@
                         <div class="d-flex m-r-25">
                             <div class="m-l-10">
                                 <p class="m-b-0 text-dark font-weight-semibold">
-                                   Audy Maulidi
+                                    @if (auth()->check())
+                                    {{ auth()->user()->nama }}
+                                    @endif
                                 </p>
                             </div>
                         </div>

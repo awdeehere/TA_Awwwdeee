@@ -19,6 +19,9 @@
     <link href="{{ url('/') }}/assets/css/app.min.css" rel="stylesheet">
     <link href="{{ url('/') }}/assets/css/simadu.css" rel="stylesheet">
 
+    <!-- summernote -->
+    <link rel="stylesheet" href="{{ url('/') }}/assets/plugins/summernote/summernote-bs4.min.css">
+
 </head>
 
 <body>
@@ -39,7 +42,7 @@
                     <div class="container-fluid pt-4">
                         <div class="row">
                             <div class="col-md-12">
-                               
+                                <x-template.utils.notif />
                             </div>
                         </div>
                         {{ $slot }}
@@ -173,8 +176,40 @@
     <script src="{{ url('/') }}/assets/vendors/datatables/dataTables.bootstrap.min.js"></script>
     <script src="{{ url('/') }}/assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
 
+    <!-- Summernote -->
+    <script src="{{ url('/') }}/assets/plugins/summernote/summernote-bs4.min.js"></script>
+
     <!-- Core JS -->
     <script src="{{ url('/') }}/assets/js/app.min.js"></script>
+    <script>
+        $(function() {
+            // Summernote
+            $('#summernote').summernote({
+                fontNames: ['Arial', 'Times New Roman', 'Arial Black'],
+                styleTags: ['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
+                blockquoteBreakingLevel: 2,
+                blockquoteBreakingLevel: 2,
+                styleWithSpan: false,
+                toolbar: [
+                    ['style', ['style']],
+                    ['font', ['bold', 'italic', 'underline', 'clear']],
+                    ['fontsize', ['fontsize']],
+                    ['fontname', ['fontname']],
+                    ['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['height', ['height']],
+                    ['insert', ['link', 'picture', 'video', 'table', 'hr']],
+                    ['view', ['fullscreen', 'codeview']],
+                ]
+            });
+
+            // Inisialisasi CodeMirror
+            CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {
+                mode: "htmlmixed",
+                theme: "monokai"
+            });
+        })
+    </script>
     <script>
         $('#data-table').DataTable();
     </script>
@@ -205,7 +240,7 @@
             });
         })
     </script>
-
+    @stack('script')
 </body>
 
 </html>
