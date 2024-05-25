@@ -38,5 +38,5 @@ Route::prefix('admin')->group(function () {
 
 Route::get('/', [ClientController::class, 'home']);
 Route::get('home', [ClientController::class, 'home']);
-Route::get('shop', [ClientController::class, 'shop']);
+Route::get('galeri', [ClientController::class, 'galeri']);
 Route::get('product/{produk}', [ClientController::class, 'product']);

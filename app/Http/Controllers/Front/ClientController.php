@@ -11,4 +11,9 @@ class ClientController extends Controller
     {
         return view('frontview.home');
     }
+
+    function galeri()
+    {
+        return view('frontview.galeri');
+    }
 }
