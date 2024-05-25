@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\PenghargaanController;
 use App\Http\Controllers\Admin\SejarahController;
 use App\Http\Controllers\Admin\VideoPembuatanController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\Front\ClientController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return redirect('admin/dashboard');
+    return redirect('home');
 });
 
 // Login
@@ -34,3 +35,8 @@ Route::prefix('admin')->group(function () {
     Route::resource('penghargaan', PenghargaanController::class);
     Route::resource('video-pembuatan', VideoPembuatanController::class);
 });
+
+Route::get('/', [ClientController::class, 'home']);
+Route::get('home', [ClientController::class, 'home']);
+Route::get('shop', [ClientController::class, 'shop']);
+Route::get('product/{produk}', [ClientController::class, 'product']);
