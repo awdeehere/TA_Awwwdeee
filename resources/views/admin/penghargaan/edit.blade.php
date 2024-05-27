@@ -1,19 +1,23 @@
 <x-app>
     <div class="card-header">
-        <h5 class="m-0 font-weight-bold text-dark" style="text-align:center; font-size: 25px"> TAMBAH DATA SEJARAH</h5>
+        <h5 class="m-0 font-weight-bold text-dark" style="text-align:center; font-size: 25px"> EDIT PENGHARGAAN
+        </h5>
     </div>
     <div class="row">
         <div class="col-md-12">
-            <a href="{{ url('admin/sejarah') }}" class="btn btn-primary btn-tone btn-sm mt-4"><i
+            <a href="{{ url('admin/penghargaan') }}" class="btn btn-primary btn-tone btn-sm mt-4"><i
                     class="fas fa-arrow-left"></i> Kembali</a>
             <div class="card">
                 <div class="card-body">
-                    <form action="{{ url('admin/sejarah') }}" method="post" enctype="multipart/form-data">
+                    <form action="{{ url('admin/penghargaan', $penghargaan->id) }}" method="post"
+                        enctype="multipart/form-data">
                         @csrf
+                        @method('put')
                         <div class="row">
                             <div class="col-md-6">
                                 <label for="" class="control-label mt-3">NAMA </label>
-                                <input type="text" class="form-control" name="nama" value="">
+                                <input type="text" class="form-control" name="nama"
+                                    value="{{ $penghargaan->nama }}">
                                 @error('nama')
                                     <p class="text-danger" style="font-size: 12px">* {{ $message }}</p
                                         style="font-size: 12px">
@@ -21,18 +25,18 @@
                             </div>
                             <div class="col-md-6">
                                 <label for="" class="control-label mt-3">UPLOAD GAMBAR</label>
-                                <input type="file" name="gambar" class="form-control mb-3">
-                                @error('gambar')
+                                <input type="file" name="foto" class="form-control mb-3"
+                                    value="{{ $penghargaan->foto }}">
+                                @error('foto')
                                     <p class="text-danger" style="font-size: 12px">* {{ $message }}</p
                                         style="font-size: 12px">
                                 @enderror
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <label for="" class="control-label mt-3">DESKRIPSI </label>
-                                <textarea type="text" class="form-control" name="deskripsi" id="summernote" cols="30" rows="6"></textarea>
-                                @error('deskripsi')
+                            <div class="col-md-6">
+                                <label for="" class="control-label mt-3">TAHUN</label>
+                                <input type="text" name="tahun" class="form-control mb-3"
+                                    value="{{ $penghargaan->tahun }}">
+                                @error('tahun')
                                     <p class="text-danger" style="font-size: 12px">* {{ $message }}</p
                                         style="font-size: 12px">
                                 @enderror

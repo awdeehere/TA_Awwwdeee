@@ -26,51 +26,21 @@
             </div>
             <br>
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6">
-                    <div class="image-content-box" data-scroll data-scroll-speed="-1">
-                        <figure>
-                            <img src="{{ url('/') }}/frontview/images/image-content-box01.jpg" alt="Image">
-                        </figure>
-                        <div class="content-box">
-                            <h3>Cable Griffith – Ghost Tree</h3>
-                            <p><strong>2018</strong>, <br>
-                                Original acrylic on paper</p>
+                @foreach ($penghargaan as $p)
+                    <div class="col-lg-4 col-md-6">
+                        <div class="image-content-box" data-scroll data-scroll-speed="1">
+                            <figure>
+                                <img src="{{ url($p->foto) }}" alt="Image">
+                            </figure>
+                            <div class="content-box">
+                                <h3>{{ $p->nama }}</h3>
+                                <p><strong>{{ $p->tahun }}</strong></p>
+                            </div>
+                            <!-- end content-box -->
                         </div>
-                        <!-- end content-box -->
+                        <!-- end image-content-box -->
                     </div>
-                    <!-- end image-content-box -->
-                </div>
-                <!-- end col-4 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="image-content-box" data-scroll data-scroll-speed="1">
-                        <figure>
-                            <img src="{{ url('/') }}/frontview/images/image-content-box02.jpg" alt="Image">
-                        </figure>
-                        <div class="content-box">
-                            <h3>Modern Home with Shark</h3>
-                            <p><strong>2019</strong>, <br>
-                                Original acrylic on paper</p>
-                        </div>
-                        <!-- end content-box -->
-                    </div>
-                    <!-- end image-content-box -->
-                </div>
-                <!-- end col-4 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="image-content-box" data-scroll data-scroll-speed="-0.5">
-                        <figure>
-                            <img src="{{ url('/') }}/frontview/images/image-content-box03.jpg" alt="Image">
-                        </figure>
-                        <div class="content-box">
-                            <h3>Love Love Me Do Bull Terrier</h3>
-                            <p><strong>2021</strong>, <br>
-                                Original acrylic on paper</p>
-                        </div>
-                        <!-- end content-box -->
-                    </div>
-                    <!-- end image-content-box -->
-                </div>
-                <!-- end col-4 -->
+                @endforeach
             </div>
             <!-- end row -->
         </div>
