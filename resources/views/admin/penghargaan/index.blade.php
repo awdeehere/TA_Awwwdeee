@@ -5,7 +5,8 @@
     <br>
     <div class="card">
         <div class="card-body">
-            <a href="{{ url('admin/sejarah/create') }}" class="float-right btn btn-dark"><i class="fas fa-plus"></i> Tambah Data</a>
+            <a href="{{ url('admin/sejarah/create') }}" class="float-right btn btn-dark"><i class="fas fa-plus"></i> Tambah
+                Data</a>
             <table id="data-table" class="table table-datatable table-bordered">
                 <thead class="bg-dark">
                     <th style="color: white;" width=" 10px" class="text-center">NO</th>
@@ -14,18 +15,23 @@
                     <th style=" color: white;" class="text-center">DESKRIPSI</th>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td class="text-center"></td>
-                        <td class="text-center">
-                            <div class="btn-group">
-                                <x-template.button.info-button url="admin/master-data/pegawai" id="" />
-                                <x-template.button.edit-button url="admin/master-data/pegawai" id="" />
-                                <x-template.button.delete-button url="admin/master-data/pegawai" id="" />
-                            </div>
-                        </td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+                    @php
+                        $no = 1;
+                    @endphp
+                    @foreach ($list_penghargaan->sortByDesc('created_at')->values() as $sejarah)
+                        <tr>
+                            <td class="text-center"></td>
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <x-template.button.info-button url="admin/master-data/pegawai" id="" />
+                                    <x-template.button.edit-button url="admin/master-data/pegawai" id="" />
+                                    <x-template.button.delete-button url="admin/master-data/pegawai" id="" />
+                                </div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>

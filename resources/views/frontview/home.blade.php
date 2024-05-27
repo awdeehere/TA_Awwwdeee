@@ -89,14 +89,13 @@
         </div>
         <!-- end play-now -->
     </header>
+    {{-- Data Produk Populer --}}
     <section class="content-section" data-background="#fffbf7">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12">
                     <div class="section-title text-center">
-                        <figure><img src="{{ url('/') }}/frontview/images/title-shape.png" alt="Image"></figure>
-                        <h2>The world's leading <br>
-                            museum of art</h2>
+                        <h2>Produk Populer</h2>
                     </div>
                     <!-- end section-title -->
                 </div>
@@ -151,22 +150,19 @@
         </div>
         <!-- end container -->
     </section>
-    <!-- end content-section -->
+    <!-- Data Pengrajim -->
     <section class="content-section">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-9">
                     <div class="section-title">
-                        <figure><img src="{{ url('/') }}/frontview/images/title-shape.png" alt="Image">
-                        </figure>
-                        <h6>DON’T MISS THE OPPORTUNITY</h6>
-                        <h2>Upcoming Events</h2>
+
+                        <h2>Pengrajin</h2>
                     </div>
                     <!-- end section-title -->
                 </div>
                 <!-- end col-9 -->
-                <div class="col-lg-3"> <a href="#" class="circle-button">BOOK AN <br>
-                        EVENT</a> </div>
+                <div class="col-lg-3"></div>
                 <!-- end col-3 -->
             </div>
             <!-- end row -->

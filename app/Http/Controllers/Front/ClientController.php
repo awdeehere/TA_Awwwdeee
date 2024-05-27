@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
+use App\Models\Admin\Sejarah;
 use Illuminate\Http\Request;
 
 class ClientController extends Controller
@@ -14,7 +15,8 @@ class ClientController extends Controller
 
     function galeri()
     {
-        return view('frontview.galeri');
+        $sejarah = Sejarah::first();
+        return view('frontview.galeri', compact('sejarah'));
     }
 
     function katalog()

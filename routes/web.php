@@ -29,7 +29,7 @@ Route::post('login', [AuthController::class, 'loginProcess']);
 Route::get('logout', [AuthController::class, 'logout']);
 
 // Admin
-Route::prefix('admin')->group(function () {
+Route::prefix('admin')->middleware('auth')->group(function () {
     Route::get('dashboard', DashboardController::class);
     Route::resource('sejarah', SejarahController::class);
     Route::resource('penghargaan', PenghargaanController::class);

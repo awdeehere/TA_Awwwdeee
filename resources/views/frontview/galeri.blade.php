@@ -12,35 +12,19 @@
         </div>
         <!-- end inner -->
     </header>
-    <section class="content-section" data-background="#fffbf7">
+    {{-- Penghargaan --}}
+
+    <section class="content-section">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-10">
-
                     <div class="text-box">
-                        <h2>Special Collection</h2>
-                        <p>If you are a regular visitor you will notice new <strong>signs</strong> and
-                            <strong>markers</strong>
-                            throughout
-                            the museum. Please take care of yourself and others by keeping a safe
-                            distance from others during your visit.
-                        </p>
-                        <p>Hand sanitiser and face coverings are available at the entrance and at key
-                            points around the galleries. We are also selling V&amp;A face coverings in our shop.
-                            In line with government guidance, all visitors will need to wear a face covering
-                            inside the museum.</p>
+                        <h2>Penghargaan</h2>
+                        <p></p>
                     </div>
-
                 </div>
-                <!-- end col-10 -->
             </div>
-            <!-- end row -->
-        </div>
-        <!-- end container -->
-    </section>
-    <!-- end content-section -->
-    <section class="content-section">
-        <div class="container">
+            <br>
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-6">
                     <div class="image-content-box" data-scroll data-scroll-speed="-1">
@@ -92,25 +76,21 @@
         </div>
         <!-- end container -->
     </section>
-    <!-- end content-section -->
-    <section class="content-section" data-background="{{ url('/') }}/frontview/images/section-bg01.jpg">
+    <!-- Data Sejarah -->
+    <section class="content-section" data-background="{{ url($sejarah->gambar) }}">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="note-box">
-                        <h2> Discover Collections</h2>
-                        <p>Become a member today to gain unlimited free entry
-                            to all of our blockbuster exhibitions at National
-                            Museums Wandau including AI: More than Human and
-                            Linda McCartney Retrospective. <strong>Join today</strong>!</p>
+                        <h2>{{ $sejarah->nama }}</h2>
+                        <div>{!! $sejarah->deskripsi !!}</div>
+                        <!-- end note-box -->
                     </div>
-                    <!-- end note-box -->
+                    <!-- end col-6 -->
                 </div>
-                <!-- end col-6 -->
+                <!-- end row -->
             </div>
-            <!-- end row -->
-        </div>
-        <!-- end container -->
+            <!-- end container -->
     </section>
     <!-- end content-section -->
     <section class="content-section">
