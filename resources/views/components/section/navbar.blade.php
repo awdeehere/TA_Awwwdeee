@@ -4,8 +4,8 @@
     <!-- end logo -->
     <div class="custom-menu">
         <ul>
-            <li><a href="#">Eng</a></li>
-            <li><a href="#">Rus</a></li>
+            <li><a href="#"> </a></li>
+            <li><a href="#"> </a></li>
         </ul>
     </div>
     <!-- end custom-menu -->
@@ -13,9 +13,7 @@
         <ul>
             <li><a href="{{ url('home') }}">Beranda</a></li>
             <li><a href="{{ url('galeri') }}">Galeri</a></li>
-            <li><a href="collections.html">Collections</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="{{ url('katalog') }}">Katalog</a></li>
         </ul>
     </div>
     <!-- end site-menu -->

@@ -16,4 +16,9 @@ class ClientController extends Controller
     {
         return view('frontview.galeri');
     }
+
+    function katalog()
+    {
+        return view('frontview.katalog');
+    }
 }
