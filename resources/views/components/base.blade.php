@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#feed01" />
-    <title>Wandau | Art & History Museum</title>
+    <title>KAIN PELANGI</title>
+    <link rel="shortcut icon" href="{{ url('/') }}/assets/images/logo/logo.ico">
     <meta name="author" content="Themezinho">
     <meta name="description" content="For all kind of exhibition museum website">
-    <meta name="keywords"
-        content="wandau, exhibition, museum, art, history, entry, ticket, contemporary, modern, booking, visit, culture, life, centuries, roots, fancy, themezinho">
+    <meta name="keywords" content="wandau, exhibition, museum, art, history, entry, ticket, contemporary, modern, booking, visit, culture, life, centuries, roots, fancy, themezinho">
 
     <!-- SOCIAL MEDIA META -->
     <meta property="og:description" content="Wandau | Art & History Museum">
@@ -46,13 +46,12 @@
 <body>
     <div class="preloader" id="preloader">
         <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1">
-            <path
-                d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z">
+            <path d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z">
             </path>
         </svg>
         <div class="inner">
             <canvas class="progress-bar" id="progress-bar" width="200" height="200"></canvas>
-            <figure><img src="{{ url('/') }}/frontview/images/preloader.png" alt="Image"></figure>
+            <figure><img src="{{ url('/') }}/assets/images/logo/logo.png" alt="Image"></figure>
             <small>Loading</small>
         </div>
         <!-- end inner -->
@@ -60,8 +59,7 @@
     <!-- end preloder -->
     <div class="page-transition">
         <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1">
-            <path
-                d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z">
+            <path d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z">
             </path>
         </svg>
     </div>
@@ -100,7 +98,7 @@
                 <svg viewBox="0 0 600 1080" preserveAspectRatio="none" version="1.1">
                     <path d="M540,1080H0V0h540c0,179.85,0,359.7,0,539.54C540,719.7,540,899.85,540,1080z"></path>
                 </svg>
-                <figure class="logo"> <img src="{{ url('/') }}/frontview/images/logo-light.png" alt="Image">
+                <figure class="logo"> <img src="{{ url('/') }}/assets/images/logo/kain.png" alt="Image">
                 </figure>
                 <!-- end logo -->
                 <div class="inner">

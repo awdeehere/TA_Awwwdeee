@@ -1,8 +1,8 @@
 <div class="header">
     <div class="logo logo-dark">
         <a href="">
-            <img src="{{ url('/') }}/assets/images/logo/ini.png" alt="Logo" width="150" height="47" class="mt-2">
-            <img class="logo-fold mt-2" src="{{ url('/') }}/assets/images/logo/test.png" alt="Logo" width="74" height="51">
+            <img src="{{ url('/') }}/assets/images/logo/kain.png" alt="Logo" width="150" height="47" class="mt-2">
+            <img class="logo-fold mt-2 ml-3" src="{{ url('/') }}/assets/images/logo/logo.png" alt="Logo" width="50" height="51">
         </a>
     </div>
     <div class="logo logo-white">

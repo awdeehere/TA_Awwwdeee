@@ -1,5 +1,5 @@
 <nav class="navbar">
-    <div class="logo"> <a href="index.html"> <img src="{{ url('/') }}/frontview/images/logo.png" alt="Image"> </a>
+    <div class="logo"> <a href="index.html"> <img src="{{ url('/') }}/assets/images/logo/kain.png" alt="Image"> </a>
     </div>
     <!-- end logo -->
     <div class="custom-menu">
