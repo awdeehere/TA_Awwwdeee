@@ -36,11 +36,8 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="container-fluid">
-                        <h1>Museums and <br>
-                            Galleries </h1>
-                        <p>Explore hundreds of museums, galleries and
-                            historic <br>
-                            places across the UK.</p>
+                        <h1>KAIN PELANGI </h1>
+                        <p>Wastra Kraton Matan Tanjungpura</p>
                     </div>
                     <!-- end container -->
                 </div>

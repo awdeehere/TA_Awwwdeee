@@ -27,6 +27,6 @@
         </svg>
     </div>
     <!-- end hamburger-menu -->
-    <div class="navbar-button"> <a href="membership.html">KUIS</a> </div>
+    <!-- <div class="navbar-button"> <a href="membership.html">KUIS</a> </div> -->
     <!-- end navbar-button -->
 </nav>

@@ -103,7 +103,7 @@
                 <!-- end logo -->
                 <div class="inner">
                     <div class="widget">
-                        <figure><img src="{{ url('/') }}/frontview/images/image07.jpg" alt="Image"></figure>
+                        <figure><img src="{{ url('/') }}/frontview/images/Gallery.jpg" alt="Image"></figure>
                         <p>It speedily me addition <strong>weddings vicinity</strong> in pleasure. Happiness commanded
                             an conveying breakfast in. Regard her say warmly elinor. Him these are visit front end for
                             <u>seven walls</u>. Money eat scale now ask law learn.
