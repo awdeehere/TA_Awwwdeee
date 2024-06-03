@@ -45,6 +45,40 @@
         </div>
         <!-- end container -->
     </section>
+    {{-- Pengrajin --}}
+
+    <section class="content-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-10">
+                    <div class="text-box">
+                        <h2>Pengrajin</h2>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row justify-content-center">
+                @foreach ($pengrajin as $p)
+                    <div class="col-lg-4 col-md-6">
+                        <div class="image-content-box" data-scroll data-scroll-speed="1">
+                            <figure>
+                                <img src="{{ url($p->foto) }}" alt="Image">
+                            </figure>
+                            <div class="content-box">
+                                <h3>{{ $p->nama }}</h3>
+                                <p><strong>{{ $p->tahun }}</strong></p>
+                            </div>
+                            <!-- end content-box -->
+                        </div>
+                        <!-- end image-content-box -->
+                    </div>
+                @endforeach
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
     <!-- Data Sejarah -->
     <section class="content-section" data-background="{{ url($sejarah->gambar) }}">
         <div class="container">

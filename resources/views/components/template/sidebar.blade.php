@@ -23,17 +23,22 @@
                     </span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li class="{{request()->is('admin/sejarah') ? 'active' : ''}} ">
+                    <li class="{{ request()->is('admin/sejarah') ? 'active' : '' }} ">
                         <a href="{{ url('admin/sejarah') }}"><i class="fas fa-solid fa-newspaper"></i> Sejarah</a>
                     </li>
                 </ul>
                 <ul class="dropdown-menu">
-                    <li class="{{request()->is('admin/penghargaan') ? 'active' : ''}} ">
+                    <li class="{{ request()->is('admin/pengrajin') ? 'active' : '' }} ">
+                        <a href="{{ url('admin/pengrajin') }}"><i class="fas fa-solid fa-newspaper"></i> Pengrajin</a>
+                    </li>
+                </ul>
+                <ul class="dropdown-menu">
+                    <li class="{{ request()->is('admin/penghargaan') ? 'active' : '' }} ">
                         <a href="{{ url('admin/penghargaan') }}"><i class="fas fa-trophy"></i> Penghargaan</a>
                     </li>
                 </ul>
                 <ul class="dropdown-menu">
-                    <li class="{{request()->is('admin/video-pembuatan') ? 'active' : ''}} ">
+                    <li class="{{ request()->is('admin/video-pembuatan') ? 'active' : '' }} ">
                         <a href="{{ url('admin/video-pembuatan') }}"><i class="fas fa-video"></i> Video Pembuatan</a>
                     </li>
                 </ul>
@@ -49,7 +54,7 @@
                     </span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li class="{{request()->is('admin/produk') ? 'active' : ''}} ">
+                    <li class="{{ request()->is('admin/produk') ? 'active' : '' }} ">
                         <a href="{{ url('admin/produk') }}"><i class="fas fa-shopping-bag"></i> Produk</a>
                     </li>
                 </ul>

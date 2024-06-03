@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\PenghargaanController;
+use App\Http\Controllers\Admin\PengrajinController;
 use App\Http\Controllers\Admin\SejarahController;
 use App\Http\Controllers\Admin\VideoPembuatanController;
 use App\Http\Controllers\AuthController;
@@ -33,6 +34,7 @@ Route::prefix('admin')->middleware('auth')->group(function () {
     Route::get('dashboard', DashboardController::class);
     Route::resource('sejarah', SejarahController::class);
     Route::resource('penghargaan', PenghargaanController::class);
+    Route::resource('pengrajin', PengrajinController::class);
     Route::resource('video-pembuatan', VideoPembuatanController::class);
 });
 

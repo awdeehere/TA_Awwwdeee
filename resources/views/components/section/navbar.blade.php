@@ -11,6 +11,7 @@
     <!-- end custom-menu -->
     <div class="site-menu">
         <ul>
+            {{-- <li><a href="{{ url('home') }}" style="color: white">Beranda</a></li> --}}
             <li><a href="{{ url('home') }}">Beranda</a></li>
             <li><a href="{{ url('galeri') }}">Galeri</a></li>
             <li><a href="{{ url('katalog') }}">Katalog</a></li>
