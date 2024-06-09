@@ -11,14 +11,14 @@
     <!-- end custom-menu -->
     <div class="site-menu">
         <ul>
-            {{-- <li><a href="{{ url('home') }}" style="color: white">Beranda</a></li> --}}
-            <li><a href="{{ url('home') }}">Beranda</a></li>
-            <li><a href="{{ url('galeri') }}">Galeri</a></li>
-            <li><a href="{{ url('katalog') }}">Katalog</a></li>
+            <li><a href="{{ url('home') }}" style="color: #FDCC05">Beranda</a></li>
+            <!-- <li><a href="{{ url('home') }}">Beranda</a></li> -->
+            <li><a href="{{ url('galeri') }}" style="color: #FDCC05">Galeri</a></li>
+            <li><a href="{{ url('katalog') }}" style="color: #FDCC05">Katalog</a></li>
         </ul>
     </div>
     <!-- end site-menu -->
-    <div class="search-button"> <i class="far fa-search"></i> </div>
+    <div class="search-button" style="color: #FDCC05"> <i class="far fa-search"></i> </div>
     <!-- end search-button -->
     <div class="hamburger-menu">
         <svg class="hamburger" width="30" height="30" viewBox="0 0 30 30">

@@ -25,14 +25,14 @@ class PengrajinController extends Controller
     public function Show($id)
     {
         return view('admin.pengrajin.show', [
-            'pengr' => Pengrajin::findOrFail($id)
+            'pengrajin' => Pengrajin::findOrFail($id)
         ]);
     }
 
     public function edit($id)
     {
         return view('admin.pengrajin.edit', [
-            'pengr' => Pengrajin::findOrFail($id)
+            'pengrajin' => Pengrajin::findOrFail($id)
         ]);
     }
 

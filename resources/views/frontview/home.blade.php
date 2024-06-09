@@ -36,16 +36,15 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="container-fluid">
-                        <h1>KAIN PELANGI </h1>
-                        <p>Wastra Kraton Matan Tanjungpura</p>
+                        <h1 style="color: antiquewhite;">KAIN <br>PELANGI </h1>
+                        <p style="color: antiquewhite;">Wastra Kraton Matan Tanjungpura</p>
                     </div>
                     <!-- end container -->
                 </div>
                 <!-- end swiper-slide -->
                 <div class="swiper-slide">
                     <div class="container-fluid">
-                        <h1>Discover Our <br>
-                            History </h1>
+                        <h1 style="color: antiquewhite;">KAIN <br>PELANGI </h1>
                         <p>Your support is vital and helps the Museum to share <br>
                             the collection with the world.</p>
                     </div>
@@ -54,8 +53,7 @@
                 <!-- end swiper-slide -->
                 <div class="swiper-slide">
                     <div class="container-fluid">
-                        <h1>The Art of <br>
-                            North Africa </h1>
+                        <h1 style="color: antiquewhite;">KAIN <br>PELANGI </h1>
                         <p>Curator Peter Loovers explores the special relationship between<br>
                             Arctic Peoples and 'man's best friend'.</p>
                     </div>
@@ -82,7 +80,7 @@
         </div>
         <!-- end play-now -->
     </header>
-    {{-- Data Produk Populer --}}
+    <!-- Data Produk Populer -->
     <section class="content-section" data-background="#fffbf7">
         <div class="container">
             <div class="row align-items-center">
@@ -94,7 +92,7 @@
                 </div>
                 <!-- end col-12 -->
                 <div class="col-lg-7">
-                    <figure class="image-box" data-scroll data-scroll-speed="-1"> <img src="{{ url('/') }}/frontview/images/side-imag01.jpg" alt="Image">
+                    <figure class="image-box" data-scroll data-scroll-speed="-1"> <img src="{{ url('/') }}/images/nage.jpg" alt="Image">
                     </figure>
                 </div>
                 <!-- end col-7 -->

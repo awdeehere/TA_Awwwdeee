@@ -7,7 +7,7 @@
     <title>Kain Pelangi | Admin</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ url('/') }}/assets/images/logo/baru.png">
+    <link rel="shortcut icon" href="{{ url('/') }}/assets/images/logo/logo.ico">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- page css -->

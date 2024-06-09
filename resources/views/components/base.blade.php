@@ -104,10 +104,15 @@
                 <div class="inner">
                     <div class="widget">
                         <figure><img src="{{ url('/') }}/frontview/images/Gallery.jpg" alt="Image"></figure>
-                        <p>It speedily me addition <strong>weddings vicinity</strong> in pleasure. Happiness commanded
-                            an conveying breakfast in. Regard her say warmly elinor. Him these are visit front end for
-                            <u>seven walls</u>. Money eat scale now ask law learn.
-                        </p>
+                        <p>deskripsi Kain Pelangi</p>
+                        <!-- <p>
+                            Kain Pelangi adalah wastra asal Ketapang, Kalimantan Barat yang dibuat dari nilai-nilai
+                            tradisi Keraton Matan Tanjungpura. Disebut kain pelangi karena wastra ini memiliki banyak
+                            warna yang cerah. Pada awalnya tradisi melangi dibuat dengan perwarnaan alami dari kulit
+                            kayu dan umbi-umbian. Motif kain pelangi menggunakan pola geomtris, bunga, daun dan suluran
+                            yang dibuat sedemikian rupa. Kain pelangi ini diproduksi kembali dengan makna baru tanpa meninggalkan
+                            nilai-nilai tradisi yang telah diwariskan.
+                        </p> -->
                     </div>
                     <!-- end widget -->
                     <div class="widget">
