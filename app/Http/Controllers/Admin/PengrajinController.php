@@ -61,12 +61,12 @@ class PengrajinController extends Controller
                 ->withInput();
         }
 
-        $penghargaan = new Pengrajin();
-        $penghargaan->nama = request('nama');
-        $penghargaan->deskripsi = request('deskripsi');
-        $penghargaan->save();
+        $pengrajin = new Pengrajin();
+        $pengrajin->nama = request('nama');
+        $pengrajin->deskripsi = request('deskripsi');
+        $pengrajin->save();
 
-        $penghargaan->handleUploadFoto();
+        $pengrajin->handleUploadFoto();
 
         return redirect('admin/pengrajin')->with('success', 'Data Berhasil Ditambahkan');
     }

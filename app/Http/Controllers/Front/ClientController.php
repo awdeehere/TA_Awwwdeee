@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Admin\Penghargaan;
 use App\Models\Admin\Pengrajin;
 use App\Models\Admin\Sejarah;
+use App\Models\Admin\Produk;
 use Illuminate\Http\Request;
 
 class ClientController extends Controller
@@ -25,6 +26,7 @@ class ClientController extends Controller
 
     function katalog()
     {
-        return view('frontview.katalog');
+        $produk = Produk::first();
+        return view('frontview.katalog', compact('produk'));
     }
 }

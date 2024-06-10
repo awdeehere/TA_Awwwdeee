@@ -31,7 +31,8 @@
         <!-- end slider-images -->
         <div class="swiper-container slider-texts">
             <svg width="580" height="400" class="svg-morph">
-                <path id="svg_morph" d="m261,30.4375c0,0 114,6 151,75c37,69 37,174 6,206.5625c-31,32.5625 -138,11.4375 -196,-19.5625c-58,-31 -86,-62 -90,-134.4375c12,-136.5625 92,-126.5625 129,-127.5625z" />
+                <path id="svg_morph"
+                    d="m261,30.4375c0,0 114,6 151,75c37,69 37,174 6,206.5625c-31,32.5625 -138,11.4375 -196,-19.5625c-58,-31 -86,-62 -90,-134.4375c12,-136.5625 92,-126.5625 129,-127.5625z" />
             </svg>
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -66,8 +67,11 @@
             <!-- end swiper-wrapper -->
         </div>
         <!-- end slider-texts -->
-        <div class="play-now"> <a href="videos/video.mp4" data-fancybox data-width="640" data-height="360" class="play-btn"></a>
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+        <div class="play-now"> <a href="https://youtu.be/o7Mg9ImyUoI?si=em1L2SzN5bcCdBak" data-fancybox data-width="640"
+                data-height="360" class="play-btn"></a>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300"
+                xml:space="preserve">
                 <defs>
                     <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
                 </defs>
@@ -82,74 +86,14 @@
         </div>
         <!-- end play-now -->
     </header>
-    {{-- Data Produk Populer --}}
-    <section class="content-section" data-background="#fffbf7">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12">
-                    <div class="section-title text-center">
-                        <h2>Produk Populer</h2>
-                    </div>
-                    <!-- end section-title -->
-                </div>
-                <!-- end col-12 -->
-                <div class="col-lg-7">
-                    <figure class="image-box" data-scroll data-scroll-speed="-1"> <img src="{{ url('/') }}/frontview/images/side-imag01.jpg" alt="Image">
-                    </figure>
-                </div>
-                <!-- end col-7 -->
-                <div class="col-lg-5">
-                    <div class="side-icon-list right-side">
-                        <ul>
-                            <li>
-                                <figure> <img src="{{ url('/') }}/frontview/images/icon01.png" alt="Image">
-                                </figure>
-                                <div class="content">
-                                    <h5>Opening times</h5>
-                                    <p>From 27 August<br>
-                                        Thursday – Sunday: 11.00-19.00</p>
-                                </div>
-                                <!-- end content -->
-                            </li>
-                            <li>
-                                <figure> <img src="{{ url('/') }}/frontview/images/icon02.png" alt="Image">
-                                </figure>
-                                <div class="content">
-                                    <h5>Book Online</h5>
-                                    <p>Some exhibitions and events carry <br>
-                                        a separate charge</p>
-                                    <a href="#">Join Now and Book Online</a>
-                                </div>
-                                <!-- end content -->
-                            </li>
-                            <li>
-                                <figure> <img src="{{ url('/') }}/frontview/images/icon03.png" alt="Image">
-                                </figure>
-                                <div class="content">
-                                    <h5>Where You Visit</h5>
-                                    <p>Cromwell New Street Road<br>
-                                        London, SW7 2RL</p>
-                                </div>
-                                <!-- end content -->
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- end side-icon-list -->
-                </div>
-                <!-- end col-5 -->
-            </div>
-            <!-- end row -->
-        </div>
-        <!-- end container -->
-    </section>
-    <!-- Data Pengrajim -->
+    <!-- Data Produk Populer -->
     <section class="content-section">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-9">
                     <div class="section-title">
 
-                        <h2>Pengrajin</h2>
+                        <h2>Produk Populer</h2>
                     </div>
                     <!-- end section-title -->
                 </div>
@@ -161,9 +105,11 @@
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-6">
                     <div class="exhibition-box" data-scroll data-scroll-speed="-1">
-                        <figure> <a href="#"><img src="{{ url('/') }}/frontview/images/event01.jpg" alt="Image" class="img"></a>
+                        <figure> <a href="#"><img src="{{ url('/') }}/frontview/images/event01.jpg"
+                                    alt="Image" class="img"></a>
                             <div class="info">
-                                <figure class="i"><img src="{{ url('/') }}/frontview/images/icon-info.png" alt="Image"></figure>
+                                <figure class="i"><img src="{{ url('/') }}/frontview/images/icon-info.png"
+                                        alt="Image"></figure>
                                 <span>50% off exhibitions</span>
                             </div>
                             <!-- end info -->
@@ -180,9 +126,11 @@
                 <!-- end col-4 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="exhibition-box" data-scroll data-scroll-speed="1">
-                        <figure> <a href="#"><img src="{{ url('/') }}/frontview/images/event02.jpg" alt="Image" class="img"></a>
+                        <figure> <a href="#"><img src="{{ url('/') }}/frontview/images/event02.jpg"
+                                    alt="Image" class="img"></a>
                             <div class="info">
-                                <figure class="i"><img src="{{ url('/') }}/frontview/images/icon-info.png" alt="Image"></figure>
+                                <figure class="i"><img src="{{ url('/') }}/frontview/images/icon-info.png"
+                                        alt="Image"></figure>
                                 <span>50% off exhibitions</span>
                             </div>
                             <!-- end info -->
@@ -199,9 +147,11 @@
                 <!-- end col-4 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="exhibition-box" data-scroll data-scroll-speed="-0.5">
-                        <figure> <a href="#"><img src="{{ url('/') }}/frontview/images/event03.jpg" alt="Image" class="img"></a>
+                        <figure> <a href="#"><img src="{{ url('/') }}/frontview/images/event03.jpg"
+                                    alt="Image" class="img"></a>
                             <div class="info">
-                                <figure class="i"><img src="{{ url('/') }}/frontview/images/icon-info.png" alt="Image"></figure>
+                                <figure class="i"><img src="{{ url('/') }}/frontview/images/icon-info.png"
+                                        alt="Image"></figure>
                                 <span>50% off exhibitions</span>
                             </div>
                             <!-- end info -->
@@ -215,11 +165,6 @@
                     </div>
                     <!-- end exhibition-box -->
                 </div>
-                <!-- end col-4 -->
-                <div class="col-12 text-center"> <a href="#" class="custom-button">VIEW ALL
-                        UPCOMING
-                        EVENTS</a> </div>
-                <!-- end col-12 -->
             </div>
             <!-- end row -->
         </div>
@@ -289,17 +234,20 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-3">
-                                <figure class="image-box" data-scroll data-scroll-speed="0"> <img src="{{ url('/') }}/frontview/images/image01.jpg" alt="Image">
+                                <figure class="image-box" data-scroll data-scroll-speed="0"> <img
+                                        src="{{ url('/') }}/frontview/images/image01.jpg" alt="Image">
                                 </figure>
                             </div>
                             <!-- end col-3 -->
                             <div class="col-md-4 offset-md-1">
-                                <figure class="image-box" data-scroll data-scroll-speed="0"> <img src="{{ url('/') }}/frontview/images/image02.jpg" alt="Image">
+                                <figure class="image-box" data-scroll data-scroll-speed="0"> <img
+                                        src="{{ url('/') }}/frontview/images/image02.jpg" alt="Image">
                                 </figure>
                             </div>
                             <!-- end col-3 -->
                             <div class="col-md-2 offset-md-1">
-                                <figure class="image-box" data-scroll data-scroll-speed="0"> <img src="{{ url('/') }}/frontview/images/image03.jpg" alt="Image">
+                                <figure class="image-box" data-scroll data-scroll-speed="0"> <img
+                                        src="{{ url('/') }}/frontview/images/image03.jpg" alt="Image">
                                 </figure>
                             </div>
                             <!-- end col-3 -->
@@ -313,17 +261,20 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-3">
-                                <figure class="image-box" data-scroll data-scroll-speed="0"> <img src="{{ url('/') }}/frontview/images/image01.jpg" alt="Image">
+                                <figure class="image-box" data-scroll data-scroll-speed="0"> <img
+                                        src="{{ url('/') }}/frontview/images/image01.jpg" alt="Image">
                                 </figure>
                             </div>
                             <!-- end col-3 -->
                             <div class="col-md-4 offset-md-1">
-                                <figure class="image-box" data-scroll data-scroll-speed="0"> <img src="{{ url('/') }}/frontview/images/image02.jpg" alt="Image">
+                                <figure class="image-box" data-scroll data-scroll-speed="0"> <img
+                                        src="{{ url('/') }}/frontview/images/image02.jpg" alt="Image">
                                 </figure>
                             </div>
                             <!-- end col-3 -->
                             <div class="col-md-2 offset-md-1">
-                                <figure class="image-box" data-scroll data-scroll-speed="0"> <img src="{{ url('/') }}/frontview/images/image03.jpg" alt="Image">
+                                <figure class="image-box" data-scroll data-scroll-speed="0"> <img
+                                        src="{{ url('/') }}/frontview/images/image03.jpg" alt="Image">
                                 </figure>
                             </div>
                             <!-- end col-3 -->
@@ -339,172 +290,7 @@
         <!-- end horizontal-scroll -->
     </section>
     <!-- end content-section -->
-    <section class="content-section no-bottom-spacing">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <div class="section-title text-center">
-                        <figure><img src="{{ url('/') }}/assets/images/logo/logo.png" alt="Image">
-                        </figure>
-                        <h6>Visit the National Wandau Museum</h6>
-                        <h2>3 steps to be safe</h2>
-                    </div>
-                    <!-- end section-title -->
-                </div>
-                <!-- end col-12 -->
-            </div>
-            <!-- end row -->
-        </div>
-        <!-- end container -->
-        <div class="container-fluid px-0">
-            <div class="row g-0">
-                <div class="col-lg-4">
-                    <div class="image-icon-box" data-scroll data-scroll-speed="-1">
-                        <figure class="icon"> <img src="{{ url('/') }}/frontview/images/icon04.png" alt="Image">
-                        </figure>
-                        <figure class="content-image"> <img src="{{ url('/') }}/frontview/images/image04.jpg" alt="Image">
-                        </figure>
-                        <div class="content-box"> <b>01.</b>
-                            <h4>Check What's Open</h4>
-                            <div class="expand">
-                                <p>Your safety is our first priority. Entry to the
-                                    National Maritime Museum is still free, but to
-                                    help us ensure social distancing.</p>
-                                <a href="#" class="custom-link">Learn More</a>
-                            </div>
-                            <!-- end expand -->
-                        </div>
-                        <!-- end content-box -->
-                    </div>
-                    <!-- end image-icon-box -->
-                </div>
-                <!-- end col-4 -->
-                <div class="col-lg-4">
-                    <div class="image-icon-box" data-scroll data-scroll-speed="0.5">
-                        <figure class="icon"> <img src="{{ url('/') }}/frontview/images/icon05.png" alt="Image">
-                        </figure>
-                        <figure class="content-image"> <img src="{{ url('/') }}/frontview/images/image05.jpg" alt="Image">
-                        </figure>
-                        <div class="content-box"> <b>02.</b>
-                            <h4>Booking Online</h4>
-                            <div class="expand">
-                                <p>Exhibition curator Venetia Porter presents this new exhibition of works
-                                    by
-                                    artists from Iran to Morocco drawn from the Museum collection.</p>
-                                <a href="#" class="custom-link">Learn More</a>
-                            </div>
-                            <!-- end expand -->
-                        </div>
-                        <!-- end content-box -->
-                    </div>
-                    <!-- end image-icon-box -->
-                </div>
-                <!-- end col-4 -->
-                <div class="col-lg-4">
-                    <div class="image-icon-box" data-scroll data-scroll-speed="1">
-                        <figure class="icon"> <img src="{{ url('/') }}/frontview/images/icon06.png" alt="Image">
-                        </figure>
-                        <figure class="content-image"> <img src="{{ url('/') }}/frontview/images/image06.jpg" alt="Image">
-                        </figure>
-                        <div class="content-box"> <b>03.</b>
-                            <h4>Keep Your Distance</h4>
-                            <div class="expand">
-                                <p>Take a look at our past exhibitions and enjoy the articles, videos and
-                                    photo
-                                    galleries still available to view online.</p>
-                                <a href="#" class="custom-link">Learn More</a>
-                            </div>
-                            <!-- end expand -->
-                        </div>
-                        <!-- end content-box -->
-                    </div>
-                    <!-- end image-icon-box -->
-                </div>
-                <!-- end col-4 -->
-            </div>
-            <!-- end row -->
-        </div>
-        <!-- end container -->
-    </section>
     <!-- end content-section -->
-    <section class="content-section">
-        <div class="container">
-            <div class="row g-0 align-items-center">
-                <div class="col-lg-6">
-                    <div class="art-slider">
-                        <div class="titles">
-                            <h6>Art Collection</h6>
-                            <h2>History of <br>
-                                Barnes</h2>
-                        </div>
-                        <!-- end titles -->
-                        <div class="swiper-container art-slider-content">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"> <span>01</span>
-                                    <h3>Venus <br>
-                                        de Milo</h3>
-                                </div>
-                                <!-- end swiper-slide -->
-                                <div class="swiper-slide"><span>02</span>
-                                    <h3>Les Demoiselles <br>
-                                        d'Avignon</h3>
-                                </div>
-                                <!-- end swiper-slide -->
-                                <div class="swiper-slide"><span>03</span>
-                                    <h3>Mona <br>
-                                        Lisa</h3>
-                                </div>
-                                <!-- end swiper-slide -->
-                                <div class="swiper-slide"><span>04</span>
-                                    <h3>L'Arlesienne: <br>
-                                        Madame Ginoux</h3>
-                                </div>
-                                <!-- end swiper-slide -->
-                                <div class="swiper-slide"><span>05</span>
-                                    <h3>Cuckoo <br>
-                                        Clocks</h3>
-                                </div>
-                                <!-- end swiper-slide -->
-                            </div>
-                            <!-- end swiper-wrapper -->
-                        </div>
-                        <!-- end art-slider-content -->
-                    </div>
-                    <!-- end art-slider -->
-                </div>
-                <!-- end col-6 -->
-                <div class="col-lg-6">
-                    <div class="art-slider" data-scroll data-scroll-speed="1">
-                        <div class="swiper-container art-slider-images">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"> <img src="{{ url('/') }}/frontview/images/art-slide01.jpg" alt="Image">
-                                </div>
-                                <!-- end swiper-slide -->
-                                <div class="swiper-slide"> <img src="{{ url('/') }}/frontview/images/art-slide02.jpg" alt="Image">
-                                </div>
-                                <!-- end swiper-slide -->
-                                <div class="swiper-slide"> <img src="{{ url('/') }}/frontview/images/art-slide03.jpg" alt="Image">
-                                </div>
-                                <!-- end swiper-slide -->
-                                <div class="swiper-slide"> <img src="{{ url('/') }}/frontview/images/art-slide04.jpg" alt="Image">
-                                </div>
-                                <!-- end swiper-slide -->
-                                <div class="swiper-slide"> <img src="{{ url('/') }}/frontview/images/art-slide05.jpg" alt="Image">
-                                </div>
-                                <!-- end swiper-slide -->
-                            </div>
-                            <!-- end swiper-wrapper -->
-                        </div>
-                        <!-- end art-slider-images -->
-                    </div>
-                    <!-- end art-slider -->
-                </div>
-                <!-- end col-6 -->
-            </div>
-            <!-- end row -->
-        </div>
-        <!-- end container -->
-    </section>
     <!-- end content-section -->
 
     <section class="content-section">
@@ -537,7 +323,8 @@
                             <a href="#" class="custom-link">Continue reading</a>
                         </div>
                         <!-- end content-box -->
-                        <figure data-scroll data-scroll-speed="-1"><img src="{{ url('/') }}/frontview/images/recent-news01.jpg" alt="Image">
+                        <figure data-scroll data-scroll-speed="-1"><img
+                                src="{{ url('/') }}/frontview/images/recent-news01.jpg" alt="Image">
                         </figure>
                     </div>
                     <!-- end recent-news -->
@@ -554,52 +341,15 @@
                             <a href="#" class="custom-link">Continue reading</a>
                         </div>
                         <!-- end content-box -->
-                        <figure data-scroll data-scroll-speed="1"><img src="{{ url('/') }}/frontview/images/recent-news02.jpg" alt="Image">
+                        <figure data-scroll data-scroll-speed="1"><img
+                                src="{{ url('/') }}/frontview/images/recent-news02.jpg" alt="Image">
                         </figure>
                     </div>
                     <!-- end recent-news -->
                 </div>
-                <!-- end col-9 -->
-                <div class="col-12 text-center"> <a href="news.html" class="circle-button">SEE ALL<br>
-                        NEWS</a> </div>
-                <!-- end col-12 -->
             </div>
             <!-- end row -->
         </div>
         <!-- end container -->
-    </section>
-    <!-- end content-section -->
-    <section class="content-section no-spacing" data-background="#FDCC05">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="newsletter-box">
-                        <div class="form">
-                            <div class="titles">
-                                <h6>Subscribe Newsletter</h6>
-                                <h2>Sign up to get the
-                                    latest news</h2>
-                            </div>
-                            <!-- end titles -->
-                            <div class="inner">
-                                <input type="email" placeholder="Enter your e-mail address">
-                                <input type="submit" value="SIGN UP">
-                            </div>
-                            <!-- end inner -->
-                            <small>Will be used in accordance with our <a href="#">Privacy
-                                    Policy</a></small>
-                        </div>
-                        <!-- end form -->
-                        <figure class="newsletter-image" data-scroll data-scroll-speed="0.7"><img src="{{ url('/') }}/frontview/images/newsletter-image.png" alt="Image">
-                        </figure>
-                    </div>
-                    <!-- end newsletter-box -->
-                </div>
-                <!-- end col-12 -->
-            </div>
-            <!-- end row -->
-        </div>
-        <!-- end container -->
-    </section>
 
 </x-base>
