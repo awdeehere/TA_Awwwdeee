@@ -336,7 +336,7 @@ button[type="submit"] i {
   -webkit-transform: translate3d(0, 0, 0);
   fill: transparent;
   stroke-width: 2px;
-  stroke: #000;
+  stroke: #FDCC05;
   stroke-linecap: round;
   transition-duration: 0.7s;
   -webkit-transition-duration: 0.7s;
@@ -824,7 +824,7 @@ button[type="submit"] i {
   color: #fff;
 }
 .navbar.light .hamburger-menu .hamburger path {
-  stroke: #fff;
+  stroke: #FDCC05;
 }
 .navbar.light .navbar-button a {
   border: 3px solid transparent;

@@ -37,16 +37,15 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="container-fluid">
-                        <h1>KAIN PELANGI </h1>
-                        <p>Wastra Kraton Matan Tanjungpura</p>
+                        <h1 style="color: antiquewhite;">KAIN <br>PELANGI </h1>
+                        <p style="color: antiquewhite;">Wastra Kraton Matan Tanjungpura</p>
                     </div>
                     <!-- end container -->
                 </div>
                 <!-- end swiper-slide -->
                 <div class="swiper-slide">
                     <div class="container-fluid">
-                        <h1>Discover Our <br>
-                            History </h1>
+                        <h1 style="color: antiquewhite;">KAIN <br>PELANGI </h1>
                         <p>Your support is vital and helps the Museum to share <br>
                             the collection with the world.</p>
                     </div>
@@ -55,8 +54,7 @@
                 <!-- end swiper-slide -->
                 <div class="swiper-slide">
                     <div class="container-fluid">
-                        <h1>The Art of <br>
-                            North Africa </h1>
+                        <h1 style="color: antiquewhite;">KAIN <br>PELANGI </h1>
                         <p>Curator Peter Loovers explores the special relationship between<br>
                             Arctic Peoples and 'man's best friend'.</p>
                     </div>
@@ -87,6 +85,66 @@
         <!-- end play-now -->
     </header>
     <!-- Data Produk Populer -->
+    <section class="content-section" data-background="#fffbf7">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                        <h2>Produk Populer</h2>
+                    </div>
+                    <!-- end section-title -->
+                </div>
+                <!-- end col-12 -->
+                <div class="col-lg-7">
+                    <figure class="image-box" data-scroll data-scroll-speed="-1"> <img src="{{ url('/') }}/images/nage.jpg" alt="Image">
+                    </figure>
+                </div>
+                <!-- end col-7 -->
+                <div class="col-lg-5">
+                    <div class="side-icon-list right-side">
+                        <ul>
+                            <li>
+                                <figure> <img src="{{ url('/') }}/frontview/images/icon01.png" alt="Image">
+                                </figure>
+                                <div class="content">
+                                    <h5>Opening times</h5>
+                                    <p>From 27 August<br>
+                                        Thursday – Sunday: 11.00-19.00</p>
+                                </div>
+                                <!-- end content -->
+                            </li>
+                            <li>
+                                <figure> <img src="{{ url('/') }}/frontview/images/icon02.png" alt="Image">
+                                </figure>
+                                <div class="content">
+                                    <h5>Book Online</h5>
+                                    <p>Some exhibitions and events carry <br>
+                                        a separate charge</p>
+                                    <a href="#">Join Now and Book Online</a>
+                                </div>
+                                <!-- end content -->
+                            </li>
+                            <li>
+                                <figure> <img src="{{ url('/') }}/frontview/images/icon03.png" alt="Image">
+                                </figure>
+                                <div class="content">
+                                    <h5>Where You Visit</h5>
+                                    <p>Cromwell New Street Road<br>
+                                        London, SW7 2RL</p>
+                                </div>
+                                <!-- end content -->
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end side-icon-list -->
+                </div>
+                <!-- end col-5 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- Data Pengrajim -->
     <section class="content-section">
         <div class="container">
             <div class="row justify-content-center">

@@ -11,7 +11,7 @@
         </div>
         <!-- end inner -->
     </header>
-    {{-- Penghargaan --}}
+    <!-- Penghargaan -->
 
     <section class="content-section">
         <div class="container">
@@ -25,9 +25,9 @@
             </div>
             <br>
             <div class="row justify-content-center">
-                @foreach ($penghargaan as $p)
+                @foreach ($penghargaan as $index => $p)
                 <div class="col-lg-4 col-md-6">
-                    <div class="image-content-box" data-scroll data-scroll-speed="1">
+                    <div class="image-content-box" data-scroll data-scroll-speed="{{ ($index % 5) + 1 }}">
                         <figure>
                             <img src="{{ url($p->foto) }}" alt="Image">
                         </figure>
@@ -45,7 +45,7 @@
         </div>
         <!-- end container -->
     </section>
-    {{-- Pengrajin --}}
+    <!-- Pengrajin -->
 
     <section class="content-section">
         <div class="container">
@@ -59,20 +59,20 @@
             </div>
             <br>
             <div class="row justify-content-center">
-                @foreach ($pengrajin as $p)
-                    <div class="col-lg-4 col-md-6">
-                        <div class="image-content-box" data-scroll data-scroll-speed="1">
-                            <figure>
-                                <img src="{{ url($p->foto) }}" alt="Image">
-                            </figure>
-                            <div class="content-box">
-                                <h3>{{ $p->nama }}</h3>
-                                <p><strong>{{ $p->tahun }}</strong></p>
-                            </div>
-                            <!-- end content-box -->
+                @foreach ($pengrajin as $index => $p)
+                <div class="col-lg-4 col-md-6">
+                    <div class="image-content-box" data-scroll data-scroll-speed="{{ ($index % 5) + 1 }}">
+                        <figure>
+                            <img src="{{ url($p->foto) }}" alt="Image">
+                        </figure>
+                        <div class="content-box">
+                            <h3>{{ $p->nama }}</h3>
+                            <p><strong>{{ $p->deskripsi }}</strong></p>
                         </div>
-                        <!-- end image-content-box -->
+                        <!-- end content-box -->
                     </div>
+                    <!-- end image-content-box -->
+                </div>
                 @endforeach
             </div>
             <!-- end row -->
