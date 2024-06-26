@@ -41,6 +41,15 @@
     <link rel="stylesheet" href="{{ url('/') }}/frontview/css/swiper.min.css">
     <link rel="stylesheet" href="{{ url('/') }}/frontview/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ url('/') }}/frontview/css/style.css">
+
+    <!-- page css -->
+    <link href="{{ url('/') }}/assets/vendors/select2/select2.css" rel="stylesheet">
+    <link href="{{ url('/') }}/assets/vendors/datatables/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url('/') }}/assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet">
+
+    <!-- Core css -->
+    <link href="{{ url('/') }}/assets/css/app.min.css" rel="stylesheet">
+    <link href="{{ url('/') }}/assets/css/simadu.css" rel="stylesheet">
 </head>
 
 <body>
@@ -169,6 +178,37 @@
     <script src="{{ url('/') }}/frontview/js/odometer.min.js"></script>
     <script src="{{ url('/') }}/frontview/js/swiper.min.js"></script>
     <script src="{{ url('/') }}/frontview/js/scripts.js"></script>
+    <!-- Core Vendors JS -->
+    <script src="{{ url('/') }}/assets/js/vendors.min.js"></script>
+
+    <!-- page js -->
+    <script src="{{ url('/') }}/assets/vendors/select2/select2.min.js"></script>
+    <script src="{{ url('/') }}/assets/vendors/chartjs/Chart.min.js"></script>
+    <script src="{{ url('/') }}/assets/js/pages/dashboard-default.js"></script>
+    <script src="{{ url('/') }}/assets/vendors/datatables/jquery.dataTables.min.js"></script>
+    <script src="{{ url('/') }}/assets/vendors/datatables/dataTables.bootstrap.min.js"></script>
+    <script src="{{ url('/') }}/assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+
+    <!-- Summernote -->
+    <script src="{{ url('/') }}/assets/plugins/summernote/summernote-bs4.min.js"></script>
+
+    <!-- Core JS -->
+    <script src="{{ url('/') }}/assets/js/app.min.js"></script>
+
+    <script>
+        $(document).on('click', '.detail-trigger', function(event) {
+            event.preventDefault();
+            var id = $(this).data('id');
+            var nama = $(this).data('nama');
+            var deskripsi = $(this).data('deskripsi');
+
+            var modal = $('#detailModal');
+            modal.find('.modal-title').text('Detail Produk ' + nama);
+            modal.find('#modalNama').text(nama);
+            modal.find('#modalDeskripsi').text(deskripsi);
+            modal.modal('show');
+        });
+    </script>
 </body>
 
 </html>
