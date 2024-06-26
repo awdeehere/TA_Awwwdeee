@@ -17,8 +17,8 @@
                 <div class="col-12">
                     <div class="section-title text-center">
                         <figure><img src="{{ url('/') }}/assets/images/logo/logo.png" alt="Image"></figure>
-                        <h2>Our collections are <br>
-                            most important</h2>
+                        <h2>Produk <br>
+                            Kain Pelangi</h2>
                     </div>
                     <!-- end section-title -->
                 </div>
@@ -26,140 +26,41 @@
             </div>
             <!-- end row -->
             <div class="row justify-content-center">
+                @foreach($produk as $index => $p)
                 <div class="col-lg-4 col-md-6">
-                    <div class="collection-box" data-scroll data-scroll-speed="1.5">
-                        <figure><img src="{{ url('/') }}/frontview/images/collection01.jpg" alt="Image">
-                        </figure>
-                        <h4><a href="collection-detail.html">Hammersmith: Kelmscott Press.</a></h4>
-                        <p>The Works of Geoffrey Chaucer Now
-                            Newly Imprinted, by William Morris & Sir
-                            Edward Burne-Jones, 1896, Hammersmith:
-                            Kelmscott Press.</p>
+                    <div class="collection-box" data-scroll data-scroll-speed="{{ ($index % 5) + 1 }}">
+                        <div id="carousel{{ $index }}" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                @foreach($p->carousels as $index => $carousel)
+                                <li data-target="#carouselExampleIndicators" data-slide-to="{{ $index }}" class="{{ $index == 0 ? 'active' : '' }}"></li>
+                                @endforeach
+                            </ol>
+                            <div class="carousel-inner">
+                                @foreach($p->carousels as $index => $carousel)
+                                <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
+                                    <img class="d-block w-100" src="{{ asset($carousel->foto) }}" alt="{{ $carousel->alt_text }}">
+                                </div>
+                                @endforeach
+                            </div>
+                        </div>
+                        <!-- <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal{{ $p->id }}">
+                            <h4 class="mt-3">{{ $p->nama }}</h4>
+                        </a> -->
+                        <h4 class="mt-3">
+                            <a href="#" style="color: black;" data-bs-toggle="modal" data-bs-target="#exampleModal{{ $p->id }}">
+                                {{ $p->nama }}
+                            </a>
+                        </h4>
+                        <p>{{ $p->hak_cipta }}</p>
                     </div>
                     <!-- end collection-box -->
                 </div>
-                <!-- end col-4 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="collection-box" data-scroll data-scroll-speed="1">
-                        <figure><img src="{{ url('/') }}/frontview/images/collection02.jpg" alt="Image">
-                        </figure>
-                        <h4><a href="collection-detail.html">Inner coffin of Hornedjitef</a></h4>
-                        <p>
-                            The mummy of the priest Hornedjitef was encased in a gilded mask and cover, and two
-                            human-shaped wooden coffins. </p>
-                    </div>
-                    <!-- end collection-box -->
-                </div>
-                <!-- end col-4 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="collection-box" data-scroll data-scroll-speed="0.5">
-                        <figure><img src="{{ url('/') }}/frontview/images/collection03.jpg" alt="Image">
-                        </figure>
-                        <h4><a href="collection-detail.html">Brass head of an Ooni</a></h4>
-                        <p>
-                            This crowned head was discovered by accident in 1939 during digging close to the
-                            royal palace in Ife. </p>
-                    </div>
-                    <!-- end collection-box -->
-                </div>
-                <!-- end col-4 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="collection-box" data-scroll data-scroll-speed="1.5">
-                        <figure><img src="{{ url('/') }}/frontview/images/collection04.jpg" alt="Image">
-                        </figure>
-                        <h4><a href="collection-detail.html">The goddess Tara</a></h4>
-                        <p>Between 1100 and 1400 Ife was one of the great city-states in West Africa</p>
-                    </div>
-                    <!-- end collection-box -->
-                </div>
-                <!-- end col-4 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="collection-box" data-scroll data-scroll-speed="1">
-                        <figure><img src="{{ url('/') }}/frontview/images/collection05.jpg" alt="Image">
-                        </figure>
-                        <h4><a href="collection-detail.html">Raphael cartoon</a></h4>
-                        <p>Lofe and flourished as a commercial centre within regional and long-distance trade
-                            networks. </p>
-                    </div>
-                    <!-- end collection-box -->
-                </div>
-                <!-- end col-4 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="collection-box" data-scroll data-scroll-speed="0.5">
-                        <figure><img src="{{ url('/') }}/frontview/images/collection06.jpg" alt="Image">
-                        </figure>
-                        <h4><a href="collection-detail.html">The Anglo-Saxon </a></h4>
-                        <p>
-                            The most impressive example of a medieval ship burial in Europe. But who was buried
-                            here? And what do their treasures reveal?
-
-                        </p>
-                    </div>
-                    <!-- end collection-box -->
-                </div>
-                <!-- end col-4 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="collection-box" data-scroll data-scroll-speed="1.5">
-                        <figure><img src="{{ url('/') }}/frontview/images/collection07.jpg" alt="Image">
-                        </figure>
-                        <h4><a href="collection-detail.html">In Ancient Mesopotamia</a></h4>
-                        <p>The Works of Geoffrey Chaucer Now
-                            Newly Imprinted, by William Morris & Sir
-                            Edward Burne-Jones, 1896, Hammersmith:
-                            Kelmscott Press.</p>
-                    </div>
-                    <!-- end collection-box -->
-                </div>
-                <!-- end col-4 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="collection-box" data-scroll data-scroll-speed="1">
-                        <figure><img src="{{ url('/') }}/frontview/images/collection08.jpg" alt="Image">
-                        </figure>
-                        <h4><a href="collection-detail.html">Canopic jars</a></h4>
-                        <p>The Works of Geoffrey Chaucer Now
-                            Newly Imprinted, by William Morris & Sir
-                            Edward Burne-Jones, 1896, Hammersmith:
-                            Kelmscott Press.</p>
-                    </div>
-                    <!-- end collection-box -->
-                </div>
-                <!-- end col-4 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="collection-box" data-scroll data-scroll-speed="0.5">
-                        <figure><img src="{{ url('/') }}/frontview/images/collection09.jpg" alt="Image">
-                        </figure>
-                        <h4><a href="collection-detail.html">Red-figured loutrophoros</a></h4>
-                        <p>The Works of Geoffrey Chaucer Now
-                            Newly Imprinted, by William Morris & Sir
-                            Edward Burne-Jones, 1896, Hammersmith:
-                            Kelmscott Press.</p>
-                    </div>
-                    <!-- end collection-box -->
-                </div>
-                <!-- end col-4 -->
+                @endforeach
             </div>
             <!-- end row -->
         </div>
         <!-- end container -->
     </section>
-    <!-- end content-section -->
-    <section class="content-section">
-        <div class="video-bg">
-            <video src="videos/video.mp4" loop autoplay playsinline muted></video>
-        </div>
-        <!-- end video-bg -->
-        <div class="container">
-            <div class="cta-box" data-scroll data-scroll-speed="-1">
-                <h6>JOIN TODAY AND ENJOY UNLIMITED</h6>
-                <h2>exhibitions, Members <br>
-                    only and more</h2>
-                <a href="#" class="custom-button">BECOME A MEMBER</a>
-            </div>
-            <!-- end cta-box -->
-        </div>
-        <!-- end container -->
-    </section>
-    <!-- end content-section -->
     <!-- end content-section -->
     <section class="content-section no-spacing" data-background="#FDCC05">
         <div class="container">
@@ -193,4 +94,70 @@
         </div>
         <!-- end container -->
     </section>
+
 </x-base>
+
+<!-- Modal -->
+@foreach($produk as $index => $p)
+<div class="modal fade" id="exampleModal{{ $p->id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">{{ $p->nama }}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="card-body">
+                    <div class="row d-flex justify-content-center">
+                        <div class="card" style="width: 25rem;">
+                            <div class="card-body">
+                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        @foreach($p->carousels as $index => $carousel)
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="{{ $index }}" class="{{ $index == 0 ? 'active' : '' }}"></li>
+                                        @endforeach
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        @foreach($p->carousels as $index => $carousel)
+                                        <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
+                                            <img class="d-block w-100" src="{{ asset($carousel->foto) }}" alt="{{ $carousel->alt_text }}">
+                                        </div>
+                                        @endforeach
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                        <span class="carousel-control-custom-icon" aria-hidden="true">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                        <span class="carousel-control-custom-icon" aria-hidden="true">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <dt class="font-weight-bold">NAMA</dt>
+                            <dd>{{ $p->nama }}</dd>
+                        </div>
+                        <div class="col-md-6">
+                            <dt class="font-weight-bold">HAK CIPTA</dt>
+                            <dd>{{ $p->hak_cipta }}</dd>
+                        </div>
+                        <div class="col-md-6">
+                            <dt class="font-weight-bold">DESKRIPSI</dt>
+                            <dd>{{ $p->deskripsi }}</dd>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endforeach

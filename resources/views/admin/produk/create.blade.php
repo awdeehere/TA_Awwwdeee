@@ -5,8 +5,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <a href="{{ url('admin/produk') }}" class="btn btn-primary btn-tone btn-sm mt-4"><i
-                    class="fas fa-arrow-left"></i> Kembali</a>
+            <a href="{{ url('admin/produk') }}" class="btn btn-primary btn-tone btn-sm mt-4"><i class="fas fa-arrow-left"></i> Kembali</a>
             <div class="card">
                 <div class="card-body">
                     <form action="{{ url('admin/produk') }}" method="post" enctype="multipart/form-data">
@@ -16,32 +15,28 @@
                                 <label for="" class="control-label mt-3">NAMA </label>
                                 <input type="text" class="form-control" name="nama" value="">
                                 @error('nama')
-                                    <p class="text-danger" style="font-size: 12px">* {{ $message }}</p
-                                        style="font-size: 12px">
+                                <p class="text-danger" style="font-size: 12px">* {{ $message }}</p style="font-size: 12px">
                                 @enderror
                             </div>
                             <div class="col-md-6">
                                 <label for="" class="control-label mt-3">UPLOAD GAMBAR</label>
-                                <input type="file" name="foto" class="form-control mb-3">
+                                <input type="file" name="foto[]" class="form-control mb-3" multiple>
                                 @error('foto')
-                                    <p class="text-danger" style="font-size: 12px">* {{ $message }}</p
-                                        style="font-size: 12px">
+                                <p class="text-danger" style="font-size: 12px">* {{ $message }}</p style="font-size: 12px">
                                 @enderror
                             </div>
                             <div class="col-md-6">
                                 <label for="" class="control-label mt-3">DESKRIPSI</label>
                                 <input type="text" name="deskripsi" class="form-control mb-3">
                                 @error('deskripsi')
-                                    <p class="text-danger" style="font-size: 12px">* {{ $message }}</p
-                                        style="font-size: 12px">
+                                <p class="text-danger" style="font-size: 12px">* {{ $message }}</p style="font-size: 12px">
                                 @enderror
                             </div>
                             <div class="col-md-6">
                                 <label for="" class="control-label mt-3">HAK CIPTA</label>
                                 <input type="text" name="hak_cipta" class="form-control mb-3">
                                 @error('hak_cipta')
-                                    <p class="text-danger" style="font-size: 12px">* {{ $message }}</p
-                                        style="font-size: 12px">
+                                <p class="text-danger" style="font-size: 12px">* {{ $message }}</p style="font-size: 12px">
                                 @enderror
                             </div>
                         </div>

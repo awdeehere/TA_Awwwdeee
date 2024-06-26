@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\admin\Module\StoreRequest;
 use Illuminate\Support\Facades\Validator;
 use App\Models\Admin\Produk;
+use App\Models\Admin\ProdukCarousel;
 use Illuminate\Http\Request;
 
 class ProdukController extends Controller
@@ -25,7 +26,7 @@ class ProdukController extends Controller
     public function Show($id)
     {
         return view('admin.produk.show', [
-            'produk' => Produk::findOrFail($id)
+            'produk' => Produk::with('carousels')->findOrFail($id)
         ]);
     }
 
@@ -67,7 +68,9 @@ class ProdukController extends Controller
         $produk->hak_cipta = request('hak_cipta');
         $produk->save();
 
-        $produk->handleUploadFoto();
+        $id_produk = $produk->id;
+        $produk = new ProdukCarousel();
+        $produk->handleUploadImage($id_produk);
 
         return redirect('admin/produk')->with('success', 'Data Berhasil Ditambahkan');
     }
@@ -75,32 +78,34 @@ class ProdukController extends Controller
     public function update($id, Request $request)
     {
 
-        $validator = Validator::make($request->all(), [
-            'nama' => 'string|max:255',
-            'deskripsi' => 'string|max:255',
-            'foto' => 'image|mimes:png,jpg,jpeg|max:5120',
-        ], [
-            'nama.string' => 'Nama Harus Berupa Kalimat',
-            'nama.max' => 'Nama Maksimal 255 Karakter',
-            'deskripsi.string' => 'Deskripsi Harus Berupa Kalimat',
-            'deskripsi.max' => 'Des Maksimal 255 Karakter',
-            'foto.image' => 'Gambar Harus Berupa Gambar',
-            'foto.mimes' => 'Gambar Harus Berekstensi png, jpg, atau jpeg',
-            'foto.max' => 'Gambar Tidak Boleh Lebih Dari 5 MB',
-        ]);
+        // $validator = Validator::make($request->all(), [
+        //     'nama' => 'string|max:255',
+        //     'deskripsi' => 'string|max:255',
+        //     'foto' => 'image|mimes:png,jpg,jpeg|max:5120',
+        // ], [
+        //     'nama.string' => 'Nama Harus Berupa Kalimat',
+        //     'nama.max' => 'Nama Maksimal 255 Karakter',
+        //     'deskripsi.string' => 'Deskripsi Harus Berupa Kalimat',
+        //     'deskripsi.max' => 'Des Maksimal 255 Karakter',
+        //     'foto.image' => 'Gambar Harus Berupa Gambar',
+        //     'foto.mimes' => 'Gambar Harus Berekstensi png, jpg, atau jpeg',
+        //     'foto.max' => 'Gambar Tidak Boleh Lebih Dari 5 MB',
+        // ]);
 
-        if ($validator->fails()) {
-            return redirect(url()->previous())
-                ->withErrors($validator)
-                ->withInput();
-        }
+        // if ($validator->fails()) {
+        //     return redirect(url()->previous())
+        //         ->withErrors($validator)
+        //         ->withInput();
+        // }
 
         $produk = Produk::find($id);
         if (request('nama')) $produk->nama = request('nama');
         if (request('deskripsi')) $produk->deskripsi = request('deskripsi');
         $produk->save();
 
-        if (request('foto')) $produk->handleUploadFoto();
+        if (request('foto')) $id_produk = $produk->id;
+        $produk = new ProdukCarousel();
+        $produk->handleUploadImage($id_produk);
 
         return redirect('admin/produk')->with('success', 'Data Berhasil di Edit');
     }
@@ -108,7 +113,8 @@ class ProdukController extends Controller
     function destroy($id)
     {
         $produk = Produk::find($id);
-        $produk->handleDeleteFoto();
+        $carousel = new ProdukCarousel();
+        $carousel->handleDeleteImage($produk->id);
         $produk->delete();
         return redirect('admin/produk')->with('danger', 'Data Berhasil Dihapus');
     }

@@ -18,7 +18,7 @@ class ClientController extends Controller
 
     function galeri()
     {
-        $sejarah = Sejarah::first();
+        $sejarah = Sejarah::all();
         $penghargaan = Penghargaan::all();
         $pengrajin = Pengrajin::all();
         return view('frontview.galeri', compact('sejarah', 'penghargaan', 'pengrajin'));
@@ -26,7 +26,7 @@ class ClientController extends Controller
 
     function katalog()
     {
-        $produk = Produk::first();
+        $produk = Produk::with('carousels')->get();
         return view('frontview.katalog', compact('produk'));
     }
 }

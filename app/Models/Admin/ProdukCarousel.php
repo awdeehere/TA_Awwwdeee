@@ -3,26 +3,20 @@
 namespace App\Models\Admin;
 
 use App\Models\ModelAuthenticate;
-use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
 
-class Produk extends ModelAuthenticate
+class ProdukCarousel extends ModelAuthenticate
 {
-    protected $table = 'produk';
+    protected $table = 'produk_carousel';
 
-    protected $fillable = [
-        'foto',
-        'nama',
-        'hak_cipta',
-        'deskripsi',
-    ];
+    protected $fillable = ['id_produk', 'foto'];
 
-    public function carousels()
+    public function produk()
     {
-        return $this->hasMany(ProdukCarousel::class, 'id_produk');
+        return $this->belongsTo(Produk::class);
     }
-
 
     function handleUploadImage($idProduk)
     {
