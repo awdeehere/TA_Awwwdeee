@@ -7,11 +7,7 @@
     <title>KAIN PELANGI - LOGIN</title>
 
     <!-- Favicon -->
-<<<<<<< Updated upstream
     <link rel="shortcut icon" href="{{ url('/') }}/assets/images/logo/logo.ico">
-=======
-    <link rel="shortcut icon" href="{{ url('/') }}/assets/images/logo/logo.png">
->>>>>>> Stashed changes
 
     <!-- Core css -->
     <link href="{{ url('/') }}/assets/css/app.min.css" rel="stylesheet">
@@ -20,25 +16,16 @@
 
 <body>
     <div class="app">
-        <div class="container-fluid p-h-0 p-v-20 bg full-height d-flex"
-            style="background-image: url('{{ url('/') }}/assets/images/others/login-3.png')">
+        <div class="container-fluid p-h-0 p-v-20 bg full-height d-flex" style="background-image: url('{{ url('/') }}/assets/images/others/login-3.png')">
             <div class="d-flex flex-column justify-content-between w-100">
                 <div class="container d-flex h-100">
                     <div class="row align-items-center w-100">
                         <div class="col-md-7 col-lg-5 m-h-auto">
                             <div class="card shadow-lg">
                                 <div class="card-body">
-<<<<<<< Updated upstream
                                     <div class="d-flex align-items-center justify-content-between m-b-30">
                                         <img class="img-fluid" alt="" src="{{ url('/') }}/assets/images/logo/kain.png" width="175" height="47">
                                         <h2 class="m-b-0 mt-3">Login</h2>
-=======
-                                    <div class="d-flex align-items-center justify-content-between m-b-20">
-                                        <img class="img-fluid" alt=""
-                                            src="{{ url('/') }}/assets/images/logo/kain.png" width="170"
-                                            height="170">
-                                        <h2 class="mt-2">Login</h2>
->>>>>>> Stashed changes
                                     </div>
                                     <form action="{{ url('/login') }}" method="post">
                                         <div class="row">
@@ -47,23 +34,21 @@
                                             </div>
                                         </div>
                                         @if (isset($message))
-                                            <div class="alert alert-danger">{{ $message }}</div>
+                                        <div class="alert alert-danger">{{ $message }}</div>
                                         @endif
                                         @csrf
                                         <div class="form-group" data-validate="Diperlukan Email yang valid">
                                             <label class="font-weight-semibold" for="">Email:</label>
                                             <div class="input-affix">
                                                 <i class="prefix-icon anticon anticon-user"></i>
-                                                <input type="text" class="form-control" name="email"
-                                                    placeholder="Email">
+                                                <input type="text" class="form-control" name="email" placeholder="Email">
                                             </div>
                                         </div>
                                         <div class="form-group" data-validate="Diperlukan Password">
                                             <label class="font-weight-semibold" for="password">Password:</label>
                                             <div class="input-affix m-b-10">
                                                 <i class="prefix-icon anticon anticon-lock"></i>
-                                                <input type="password" class="form-control" name="password"
-                                                    placeholder="Password">
+                                                <input type="password" class="form-control" name="password" placeholder="Password">
                                             </div>
                                         </div>
                                         <div class="form-group">

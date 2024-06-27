@@ -43,13 +43,12 @@
     <link rel="stylesheet" href="{{ url('/') }}/frontview/css/style.css">
 
     <!-- page css -->
-    <link href="{{ url('/') }}/assets/vendors/select2/select2.css" rel="stylesheet">
+    <!-- <link href="{{ url('/') }}/assets/vendors/select2/select2.css" rel="stylesheet">
     <link href="{{ url('/') }}/assets/vendors/datatables/dataTables.bootstrap.min.css" rel="stylesheet">
-    <link href="{{ url('/') }}/assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="{{ url('/') }}/assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet"> -->
 
     <!-- Core css -->
-    <link href="{{ url('/') }}/assets/css/app.min.css" rel="stylesheet">
-    <link href="{{ url('/') }}/assets/css/simadu.css" rel="stylesheet">
+    <!-- <link href="{{ url('/') }}/assets/css/app.min.css" rel="stylesheet"> -->
 </head>
 
 <body>

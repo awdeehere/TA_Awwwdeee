@@ -1,5 +1,5 @@
 <x-base>
-    <header class="page-header" data-background="images/page-header.jpg">
+    <header class="page-header" data-background="{{ url('/') }}/assets/images/others/audy.jpg">
         <div class="inner">
             <svg width="580" height="400" class="svg-morph">
                 <path id="svg_morph" d="m261,30.4375c0,0 114,6 151,75c37,69 37,174 6,206.5625c-31,32.5625 -138,11.4375 -196,-19.5625c-58,-31 -86,-62 -90,-134.4375c12,-136.5625 92,-126.5625 129,-127.5625z" />
@@ -103,55 +103,45 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">{{ $p->nama }}</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="card-body">
-                    <div class="row d-flex justify-content-center">
-                        <div class="card" style="width: 25rem;">
-                            <div class="card-body">
-                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                                    <ol class="carousel-indicators">
-                                        @foreach($p->carousels as $index => $carousel)
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="{{ $index }}" class="{{ $index == 0 ? 'active' : '' }}"></li>
-                                        @endforeach
-                                    </ol>
-                                    <div class="carousel-inner">
-                                        @foreach($p->carousels as $index => $carousel)
-                                        <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
-                                            <img class="d-block w-100" src="{{ asset($carousel->foto) }}" alt="{{ $carousel->alt_text }}">
-                                        </div>
-                                        @endforeach
-                                    </div>
-                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                        <span class="carousel-control-custom-icon" aria-hidden="true">
-                                            <i class="fas fa-chevron-left"></i>
-                                        </span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                                        <span class="carousel-control-custom-icon" aria-hidden="true">
-                                            <i class="fas fa-chevron-right"></i>
-                                        </span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
                     <div class="row">
                         <div class="col-md-6">
-                            <dt class="font-weight-bold">NAMA</dt>
-                            <dd>{{ $p->nama }}</dd>
+                            <div id="carouselExampleIndicators{{ $p->id }}" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    @foreach($p->carousels as $index => $carousel)
+                                    <li data-target="#carouselExampleIndicators{{ $p->id }}" data-slide-to="{{ $index }}" class="{{ $index == 0 ? 'active' : '' }}"></li>
+                                    @endforeach
+                                </ol>
+                                <div class="carousel-inner">
+                                    @foreach($p->carousels as $index => $carousel)
+                                    <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
+                                        <img class="d-block w-100" src="{{ asset($carousel->foto) }}" alt="{{ $carousel->alt_text }}">
+                                    </div>
+                                    @endforeach
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators{{ $p->id }}" role="button" data-slide="prev">
+                                    <span class="carousel-control-custom-icon" aria-hidden="true">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators{{ $p->id }}" role="button" data-slide="next">
+                                    <span class="carousel-control-custom-icon" aria-hidden="true">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
                         </div>
                         <div class="col-md-6">
-                            <dt class="font-weight-bold">HAK CIPTA</dt>
+                            <h3 class="font-weight-bold" style="font-family: 'Cinzel', serif;">{{ $p->nama }}</h3>
+                            <br>
+                            <dt class="font-weight-bold" style="font-family: 'Cinzel', serif;">HAK CIPTA</dt>
                             <dd>{{ $p->hak_cipta }}</dd>
-                        </div>
-                        <div class="col-md-6">
-                            <dt class="font-weight-bold">DESKRIPSI</dt>
+                            <dt class="font-weight-bold" style="font-family: 'Cinzel', serif;">DESKRIPSI</dt>
                             <dd>{{ $p->deskripsi }}</dd>
                         </div>
                     </div>

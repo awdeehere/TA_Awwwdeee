@@ -1,4 +1,4 @@
-<nav class="navbar">
+<nav class="navbar" style="background-color: transparent;">
     <div class="logo"> <a href="index.html"> <img src="{{ url('/') }}/assets/images/logo/kain.png" alt="Image"> </a>
     </div>
     <!-- end logo -->

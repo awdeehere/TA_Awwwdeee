@@ -74,6 +74,11 @@ body {
   font-size: 17px;
 }
 
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+
 /* LOCOMOTIVE */
 .no-transform {
   transform: none !important;
@@ -813,6 +818,8 @@ button[type="submit"] i {
   left: 0;
   top: 0;
   z-index: 9;
+  background-color: transparent;
+  border: none;
 }
 .navbar.light {
   color: #fff;

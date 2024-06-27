@@ -18,7 +18,7 @@ class ClientController extends Controller
 
     function galeri()
     {
-        $sejarah = Sejarah::all();
+        $sejarah = Sejarah::first();
         $penghargaan = Penghargaan::all();
         $pengrajin = Pengrajin::all();
         return view('frontview.galeri', compact('sejarah', 'penghargaan', 'pengrajin'));
