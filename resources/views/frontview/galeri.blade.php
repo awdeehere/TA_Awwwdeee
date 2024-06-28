@@ -2,7 +2,8 @@
     <header class="page-header" data-background="{{ url('/') }}/frontview/images/3.jpg">
         <div class="inner">
             <svg width="580" height="400" class="svg-morph">
-                <path id="svg_morph" d="m261,30.4375c0,0 114,6 151,75c37,69 37,174 6,206.5625c-31,32.5625 -138,11.4375 -196,-19.5625c-58,-31 -86,-62 -90,-134.4375c12,-136.5625 92,-126.5625 129,-127.5625z" />
+                <path id="svg_morph"
+                    d="m261,30.4375c0,0 114,6 151,75c37,69 37,174 6,206.5625c-31,32.5625 -138,11.4375 -196,-19.5625c-58,-31 -86,-62 -90,-134.4375c12,-136.5625 92,-126.5625 129,-127.5625z" />
             </svg>
             <h1>Galeri</h1>
             <p>For the latest updates about reopening, booking tickets and what's happening at the Museum, sign up to
@@ -26,19 +27,19 @@
             <br>
             <div class="row justify-content-center">
                 @foreach ($penghargaan as $index => $p)
-                <div class="col-lg-4 col-md-6">
-                    <div class="image-content-box" data-scroll data-scroll-speed="{{ ($index % 5) + 1 }}">
-                        <figure>
-                            <img src="{{ url($p->foto) }}" alt="Image">
-                        </figure>
-                        <div class="content-box">
-                            <h3>{{ $p->nama }}</h3>
-                            <p><strong>{{ $p->tahun }}</strong></p>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="image-content-box" data-scroll data-scroll-speed="{{ ($index % 5) + 1 }}">
+                            <figure>
+                                <img src="{{ url($p->foto) }}" alt="Image">
+                            </figure>
+                            <div class="content-box">
+                                <h3>{{ $p->nama }}</h3>
+                                <p><strong>{{ $p->tahun }}</strong></p>
+                            </div>
+                            <!-- end content-box -->
                         </div>
-                        <!-- end content-box -->
+                        <!-- end image-content-box -->
                     </div>
-                    <!-- end image-content-box -->
-                </div>
                 @endforeach
             </div>
             <!-- end row -->
@@ -60,19 +61,19 @@
             <br>
             <div class="row justify-content-center">
                 @foreach ($pengrajin as $index => $p)
-                <div class="col-lg-4 col-md-6">
-                    <div class="image-content-box" data-scroll data-scroll-speed="{{ ($index % 5) + 1 }}">
-                        <figure>
-                            <img src="{{ url($p->foto) }}" alt="Image">
-                        </figure>
-                        <div class="content-box">
-                            <h3>{{ $p->nama }}</h3>
-                            <p><strong>{{ $p->deskripsi }}</strong></p>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="image-content-box" data-scroll data-scroll-speed="{{ ($index % 5) + 1 }}">
+                            <figure>
+                                <img src="{{ url($p->foto) }}" alt="Image">
+                            </figure>
+                            <div class="content-box">
+                                <h3>{{ $p->nama }}</h3>
+                                <p><strong>{{ $p->deskripsi }}</strong></p>
+                            </div>
+                            <!-- end content-box -->
                         </div>
-                        <!-- end content-box -->
+                        <!-- end image-content-box -->
                     </div>
-                    <!-- end image-content-box -->
-                </div>
                 @endforeach
             </div>
             <!-- end row -->
@@ -121,37 +122,6 @@
                     <!-- end text-box -->
                 </div>
                 <!--end col-12 -->
-            </div>
-            <!-- end row -->
-        </div>
-        <!-- end container -->
-    </section>
-    <!-- end content-section -->
-    <section class="content-section no-spacing" data-background="#FDCC05">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="newsletter-box">
-                        <div class="form">
-                            <div class="titles">
-                                <h6>Subscribe Newsletter</h6>
-                                <h2>Sign up to get the
-                                    latest news</h2>
-                            </div>
-                            <!-- end titles -->
-                            <div class="inner">
-                                <input type="email" placeholder="Enter your e-mail address">
-                                <input type="submit" value="SIGN UP">
-                            </div>
-                            <!-- end inner -->
-                            <small>Will be used in accordance with our <a href="#">Privacy Policy</a></small>
-                        </div>
-                        <!-- end form -->
-                        <figure class="newsletter-image" data-scroll data-scroll-speed="0.7"><img src="{{ url('/') }}/frontview/images/newsletter-image.png" alt="Image"></figure>
-                    </div>
-                    <!-- end newsletter-box -->
-                </div>
-                <!-- end col-12 -->
             </div>
             <!-- end row -->
         </div>
