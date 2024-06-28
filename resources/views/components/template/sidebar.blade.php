@@ -59,6 +59,22 @@
                     </li>
                 </ul>
             </li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="javascript:void(0);">
+                    <span class="icon-holder">
+                        <i class="nav-icon fas fa-archive"></i>
+                    </span>
+                    <span class="title">Data</span>
+                    <span class="arrow">
+                        <i class="arrow-icon"></i>
+                    </span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li class="{{ request()->is('admin/tentang-kami') ? 'active' : '' }} ">
+                        <a href="{{ url('admin/tentang-kami') }}"><i class="fas fa-solid fa-newspaper"></i> Tentang Kami</a>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </div>
 </div>

@@ -15,6 +15,7 @@
             <!-- <li><a href="{{ url('home') }}">Beranda</a></li> -->
             <li><a href="{{ url('galeri') }}" style="color: #FDCC05">Galeri</a></li>
             <li><a href="{{ url('katalog') }}" style="color: #FDCC05">Katalog</a></li>
+            <li><a href="{{ url('about') }}" style="color: #FDCC05">Tentang Kami</a></li>
         </ul>
     </div>
     <!-- end site-menu -->

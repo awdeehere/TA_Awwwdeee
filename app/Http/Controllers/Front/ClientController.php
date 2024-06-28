@@ -7,6 +7,7 @@ use App\Models\Admin\Penghargaan;
 use App\Models\Admin\Pengrajin;
 use App\Models\Admin\Sejarah;
 use App\Models\Admin\Produk;
+use App\Models\Admin\Tentang;
 use Illuminate\Http\Request;
 
 class ClientController extends Controller
@@ -28,5 +29,11 @@ class ClientController extends Controller
     {
         $produk = Produk::with('carousels')->get();
         return view('frontview.katalog', compact('produk'));
+    }
+
+    function about()
+    {
+        $tentang = Tentang::first();
+        return view('frontview.about', compact('tentang'));
     }
 }

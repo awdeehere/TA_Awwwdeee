@@ -21,7 +21,16 @@
 
     <!-- summernote -->
     <link rel="stylesheet" href="{{ url('/') }}/assets/plugins/summernote/summernote-bs4.min.css">
-
+    <style>
+        .truncate {
+            width: 200px;
+            /* Sesuaikan lebar sesuai kebutuhan */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>

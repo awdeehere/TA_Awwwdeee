@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\PenghargaanController;
 use App\Http\Controllers\Admin\PengrajinController;
 use App\Http\Controllers\Admin\ProdukController;
 use App\Http\Controllers\Admin\SejarahController;
+use App\Http\Controllers\Admin\TentangKamiController;
 use App\Http\Controllers\Admin\VideoPembuatanController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Front\ClientController;
@@ -38,10 +39,12 @@ Route::prefix('admin')->middleware('auth')->group(function () {
     Route::resource('pengrajin', PengrajinController::class);
     Route::resource('video-pembuatan', VideoPembuatanController::class);
     Route::resource('produk', ProdukController::class);
+    Route::resource('tentang-kami', TentangKamiController::class);
 });
 
 Route::get('/', [ClientController::class, 'home']);
 Route::get('home', [ClientController::class, 'home']);
 Route::get('galeri', [ClientController::class, 'galeri']);
 Route::get('katalog', [ClientController::class, 'katalog']);
+Route::get('about', [ClientController::class, 'about']);
 Route::get('product/{produk}', [ClientController::class, 'product']);
