@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer" style="background-color: #FDCC05">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-6">
@@ -12,18 +12,18 @@
             </div>
             <!-- end col-4 -->
             <div class="col-lg-4 col-md-6">
-                <h6 class="widget-title">Connect Us</h6>
+                <h6 class="widget-title">Media Sosial</h6>
                 <ul class="social-media">
-                    <li><a href="#"><i class="fab fa-facebook-f"></i> /wandau-uk</a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i> /wandau-museum</a></li>
-                    <li><a href="#"><i class="fab fa-youtube"></i> /wandau-tv</a></li>
+                    <li><a href="https://www.instagram.com/pelangikain/"><i class="fab fa-instagram"></i>pelangikain</a>
+                    </li>
                 </ul>
             </div>
             <!-- end col-4 -->
             <div class="col-lg-4">
-                <h6 class="widget-title">Visit Us Now</h6>
+                <h6 class="widget-title">Kunjungi Kami</h6>
                 <address class="address">
-                    Cromwell Road New Town SW7 <strong>London - England</strong> <i class="fas fa-info-circle"></i> +44
+                    <strong>Jalan Merak No. 9 Ketapang Kalimantan
+                        Barat 78813</strong> <i class="fas fa-info-circle"></i> +44
                     (0)20 7942 2000
                 </address>
             </div>
@@ -33,8 +33,9 @@
     </div>
     <!-- end container -->
     <div class="footer-bottom">
-        <div class="container"> <span class="copyright">© 2021 Wandau | Art & History Museum</span> <span
-                class="creation">Site created by <a href="#">themezinho</a></span> </div>
+        <div class="container"> <span class="copyright">© 2024 Politeknik Negeri Ketapang | Program Studi Teknologi
+                Informasi</span> <span class="creation">Site created by <a href="#">Maulidi Rusla</a></span>
+        </div>
         <!-- end container -->
     </div>
     <!-- end footer-bottom -->

@@ -46,8 +46,8 @@
                 <div class="swiper-slide">
                     <div class="container-fluid">
                         <h1 style="color: rgb(0, 0, 0);">KAIN <br>PELANGI </h1>
-                        <p>Your support is vital and helps the Museum to share <br>
-                            the collection with the world.</p>
+                        <p>Memperkuat Identitas Budaya Lokal <br>
+                            Warna, Cinta, dan Harmoni</p>
                     </div>
                     <!-- end container -->
                 </div>
@@ -55,8 +55,8 @@
                 <div class="swiper-slide">
                     <div class="container-fluid">
                         <h1 style="color: rgb(0, 0, 0);">KAIN <br>PELANGI </h1>
-                        <p>Curator Peter Loovers explores the special relationship between<br>
-                            Arctic Peoples and 'man's best friend'.</p>
+                        <p>Kekayaan Warisan Leluhur Kita,<br>
+                            Cerminan Sejarah Ketapang</p>
                     </div>
                     <!-- end container -->
                 </div>
@@ -90,7 +90,7 @@
             <div class="row align-items-center">
                 <div class="col-12">
                     <div class="section-title text-center">
-                        <h2>Produk Populer</h2>
+                        <h3>Kain Pelangi Ketapang: <br> Warisan Budaya Penuh Warna</h3>
                     </div>
                     <!-- end section-title -->
                 </div>
@@ -108,9 +108,9 @@
                                 <figure> <img src="{{ url('/') }}/frontview/images/icon01.png" alt="Image">
                                 </figure>
                                 <div class="content">
-                                    <h5>Opening times</h5>
-                                    <p>From 27 August<br>
-                                        Thursday – Sunday: 11.00-19.00</p>
+                                    <h5>Jam Buka</h5>
+                                    <p>Setiap Hari<br>
+                                        Jam : 11.00-19.00 WIB</p>
                                 </div>
                                 <!-- end content -->
                             </li>
@@ -129,9 +129,9 @@
                                 <figure> <img src="{{ url('/') }}/frontview/images/icon03.png" alt="Image">
                                 </figure>
                                 <div class="content">
-                                    <h5>Where You Visit</h5>
-                                    <p>Cromwell New Street Road<br>
-                                        London, SW7 2RL</p>
+                                    <h5>Alamat Kami</h5>
+                                    <p>Jalan Merak No. 9<br>
+                                        Ketapang Kalimantan Barat 78813</p>
                                 </div>
                                 <!-- end content -->
                             </li>
@@ -237,8 +237,7 @@
                     <div class="section-title text-center">
                         <figure><img src="{{ url('/') }}/assets/images/logo/logo.png" alt="Image">
                         </figure>
-                        <h2>Art Inspiration of <br>
-                            19th Century</h2>
+                        <h2>Warisan Budaya Abad Sembilan Belas</h2>
                     </div>
                     <!-- end section-title -->
                 </div>
@@ -359,8 +358,8 @@
                     <div class="section-title text-center">
                         <figure><img src="{{ url('/') }}/assets/images/logo/logo.png" alt="Image">
                         </figure>
-                        <h6>Get Latest Updates and News</h6>
-                        <h2>Recent News</h2>
+                        <h6>Dapatkan Pembaruan dan Berita Terkini</h6>
+                        <h2>Berita Terbaru</h2>
                     </div>
                     <!-- end section-title -->
                 </div>
